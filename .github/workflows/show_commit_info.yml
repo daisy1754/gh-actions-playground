@@ -42,4 +42,6 @@ jobs:
           git show 
           git log --pretty=oneline
           echo 'nameonly'
+          echo  ${{ github.event.before }}
+          echo  ${{ github.event.after }}
           git diff --name-only ${{ github.event.before }} ${{ github.event.after }}
