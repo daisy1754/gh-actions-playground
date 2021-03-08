@@ -45,3 +45,4 @@ jobs:
           echo  ${{ github.event.before }}
           echo  ${{ github.event.after }}
           git diff --name-only ${{ github.event.before }} ${{ github.event.after }}
+          git rev-list ${{ github.event.before }}..${{ github.event.after }}
