@@ -7,4 +7,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Hello world action step
-      uses: releaselog/releaselog-action
+      uses: releaselog/releaselog-action@v0.1
