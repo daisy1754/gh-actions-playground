@@ -8,3 +8,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Hello world action step
       uses: releaselog/releaselog-action@v0.1
+      with:
+        api_key: ${{ secrets.releaselog_api_key }}
